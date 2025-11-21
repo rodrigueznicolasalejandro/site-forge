@@ -1,0 +1,40 @@
+:root{
+  --navy: #0b3b4a;
+  --teal: #18a0a5;
+  --light: #7fd3d6;
+  --orange: #e59a3c;
+  --bg: #f6f2ec;
+  --text: #173442;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--text); background:var(--bg); -webkit-font-smoothing:antialiased}
+.container{max-width:1000px;margin:0 auto;padding:40px 20px}
+.site-header{background:transparent;padding:16px 0;position:sticky;top:0;z-index:10}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:56px;height:56px;object-fit:contain;border-radius:8px}
+.brand-text strong{display:block;font-size:18px;color:var(--navy)}
+.brand-text small{font-size:12px;color:#567072}
+nav a{margin-left:14px;text-decoration:none;color:var(--navy)}
+.hero{padding:60px 0;background:linear-gradient(90deg, rgba(11,59,74,0.06), rgba(24,160,165,0.04))}
+.hero h1{font-size:34px;margin:0 0 10px}
+.panel{padding:40px 0}
+.panel.alt{background:#fff;border-top:1px solid rgba(0,0,0,0.03)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:white;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(11,59,74,0.04)}
+.cta{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--teal);color:white;text-decoration:none;margin-top:12px}
+.plans-grid{display:flex;gap:16px;flex-wrap:wrap}
+.plan{background:white;padding:18px;border-radius:8px;flex:1;min-width:200px}
+.price{font-weight:700;font-size:20px;margin:8px 0}
+.clients-grid, .tech-grid{display:flex;gap:16px;flex-wrap:wrap}
+.client, .tech{background:white;padding:12px;border-radius:8px;display:flex;align-items:center;gap:12px;min-width:160px}
+.client img, .tech img{width:56px;height:56px;object-fit:contain}
+.contact-form{display:grid;gap:8px;max-width:540px}
+.contact-form label{display:block;font-size:14px}
+.contact-form input, .contact-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6}
+.site-footer{padding:20px 0;text-align:center;color:#6c7b7b;background:transparent}
+.status{margin-top:10px;font-style:italic}
+@media (max-width:600px){
+  .header-inner{flex-direction:column;gap:12px}
+  nav a{margin-left:8px}
+}
